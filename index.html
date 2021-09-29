@@ -2,22 +2,26 @@
 <html lang="nl">
     <head>
         <meta charset="UTF-8">
-        <title>Hallo vrienden!</title>
+        <title>Hallo!</title>
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+    <body onload="startTime()">
         <div id="main">
             <div class="column">
-                <h1>Hallo</h1>
+                <h1 id="klok"></h1>
             </div>
             <div class="column">
                 <img id="logo" src="images/logo.gif" alt="logo">
             </div>
             <div class="column">
-                <h1>vrienden!</h1>
+                <a class="weatherwidget-io" href="https://forecast7.com/nl/51d053d72/ghent/" data-label_1="WEER" data-label_2="GENT" data-font="Open Sans" data-icons="Climacons Animated" data-theme="original" data-basecolor="rgba(255, 255, 255, 0)" >WEER GENT</a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
             </div>
         </div>
     </body>
+    <script src="js/index.js"></script>
     <footer>
         Made with 🍺 & ❤️ by <a href="https://ferredebelie.be">Ferre</a>
     </footer>
